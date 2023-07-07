@@ -274,23 +274,61 @@ for (let i = 0; i <= 10; i++) {
 
 //Destructuring when we dont need some properties in object
 // const { brand, color } = mob;
-const person = {
-  name: "Bibek",
-  address: "Sydney",
-  age: 20,
-};
-const bio = ({ name, address, age }) => {
-  //   const { name, add, age } = personObj; // destructuring
-  return `
-    hi my name is ${name} I live in ${address} and I am ${age} years old
-    `;
-};
-const result = bio(person);
-console.log(result);
+// const person = {
+//   name: "Bibek",
+//   address: "Sydney",
+//   age: 20,
+// };
+// const bio = ({ name, address, age }) => {
+//   //   const { name, add, age } = personObj; // destructuring
+//   return `
+//     hi my name is ${name} I live in ${address} and I am ${age} years old
+//     `;
+// };
+// const result = bio(person);
+// console.log(result);
 
 // const newObj = Object.assign({},person,parent) to combine(rest) or spreading out- const newObj = {...parent,...person}
 // const keyArg = Object.keys(newObj); to convert to array
 // const keyArg = Object.values(newObj); to convert to array
 
+//  Date()
+// const dt = Date.now();
+// dt.setDate(dt.getDate() + 7);
+// console.log(dt);
 
+// Challenge
+// create a function that takes food name and expiry Date, returns
+// like xyz is expired or xyz has 5 more days to consume before expires
 
+//expired
+const fish = {
+  name: "Tuna Fish",
+  expiry: "07/07/2023",
+};
+
+//not expired
+const milk = {
+  name: "A2 milk",
+  expiry: "09/07/2023",
+};
+
+const checkExpiry = ({ name, expiry }) => {
+  const dt = Date.now();
+  const current = new Date(dt);
+
+  //   console.log(current.toLocaleDateString());
+
+  if (expiry <= current.toLocaleDateString()) {
+    // const fft = new Date(expiry).getTime() is the right way
+    return `${name} is  expired`;
+  } else {
+    return `${name} is not expired`;
+  }
+  //   const food = () => {};
+};
+const result = checkExpiry(fish);
+const result1 = checkExpiry(milk);
+
+console.log(result);
+console.log(result1);
