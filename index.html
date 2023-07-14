@@ -4,14 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Basics JS</title>
+
+    <style>
+      .success {
+        border: 1px solid green;
+        background-color: aquamarine;
+        color: blueviolet;
+        padding: 2rem 0;
+        text-align: center;
+      }
+      .error {
+        border: 1px solid rgb(208, 25, 25);
+        background-color: rgb(163, 112, 36);
+        color: rgb(43, 102, 175);
+        padding: 2rem 0;
+        text-align: center;
+      }
+    </style>
     <!-- <script>
       console.log("Hi");
       alert("Hello");
     </script> -->
   </head>
   <body>
-    Hello JS
+    <h1>Javascript basic DOM!</h1>
+    <div class="first success" id="first">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quae
+      maxime et sunt illo incidunt nam alias deleniti esse, minus fugiat magnam,
+      quidem, dolores autem hic provident modi id dolorem.
+    </div>
+    <p onclick="clickMe()" class="">Click me!</p>
+    <div class="info1 error">
+      <div>
+        content before paragraph
+        <p>Content inside paragraph</p>
+      </div>
+    </div>
+    <div id="display" class="success">Bibek Shahi</div>
+    <a href="Google.com">Google</a>
+    <div class="info1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio asperiores
+        maxime id ex est esse magni repudiandae laborum quod, corrupti doloribus
+        repellat voluptas pariatur optio facere veniam ut autem at?
+      </p>
+    </div>
     <!-- <script src="./script.js"></script> -->
-    <script src="./advance-script.js"></script>
+    <!-- <script src="./advance-script.js"></script> -->
+    <script src="./dom.js"></script>
   </body>
 </html>

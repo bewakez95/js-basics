@@ -149,7 +149,7 @@ for (let i = 0; i <= 10; i++) {
 
 // escape charater = /
 // str.len = space also counts
-// str.toUpperCase,toLowerCase
+// str.toUpperCase(),toLowerCase()
 // const val = str[2]
 // const val = str.indexOf["my"], lastIndexOf("i"), replace("i","you"), replaceAll,substring(4,5),includes("Prem")[give true or flase]slice,charAt(10),
 //**split(" ")[splits finding space], search("prem")[same like includes but gives index value of character]
@@ -242,7 +242,7 @@ for (let i = 0; i <= 10; i++) {
 //   return result;
 // }
 
-// 🎉  [ 1, 3, 2 ]
+//   [ 1, 3, 2 ]
 // console.log(unique(random));
 // console.log(uniq);
 
@@ -302,33 +302,34 @@ for (let i = 0; i <= 10; i++) {
 // like xyz is expired or xyz has 5 more days to consume before expires
 
 //expired
-const fish = {
-  name: "Tuna Fish",
-  expiry: "07/07/2023",
-};
+// const fish = {
+//   name: "Tuna Fish",
+//   expiry: "07/07/2023",
+// };
 
 //not expired
-const milk = {
-  name: "A2 milk",
-  expiry: "09/07/2023",
-};
+// const milk = {
+//   name: "A2 milk",
+//   expiry: "09/07/2023",
+// };
 
-const checkExpiry = ({ name, expiry }) => {
-  const dt = Date.now();
-  const current = new Date(dt);
+// const checkExpiry = ({ name, expiry }) => {
+//   const dt = Date.now();
+//   const current = new Date(dt);
 
-  //   console.log(current.toLocaleDateString());
+//   //   console.log(current.toLocaleDateString());
 
-  if (expiry <= current.toLocaleDateString()) {
-    // const fft = new Date(expiry).getTime() is the right way
-    return `${name} is  expired`;
-  } else {
-    return `${name} is not expired`;
-  }
-  //   const food = () => {};
-};
-const result = checkExpiry(fish);
-const result1 = checkExpiry(milk);
+//   if (expiry <= current.toLocaleDateString()) {
+//     // const fft = new Date(expiry).getTime() is the right way
+//     return `${name} is  expired`;
+//   } else {
+//     return `${name} is not expired`;
+//   }
+//   //   const food = () => {};
+// };
+// const result = checkExpiry(fish);
+// const result1 = checkExpiry(milk);
 
-console.log(result);
-console.log(result1);
+// console.log(result);
+// console.log(result1);
+
